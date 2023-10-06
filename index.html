@@ -63,18 +63,11 @@
           More Research
         </a>
         <div class="navbar-dropdown">
-          <a class="navbar-item" href="https://hypernerf.github.io">
-            HyperNeRF
+          <a class="navbar-item" href="https://arxiv.org/abs/2305.13705">
+            DiffHand
           </a>
-          <a class="navbar-item" href="https://nerfies.github.io">
-            Nerfies
-          </a>
-          <a class="navbar-item" href="https://latentfusion.github.io">
-            LatentFusion
-          </a>
-          <a class="navbar-item" href="https://photoshape.github.io">
-            PhotoShape
-          </a>
+          <a class="navbar-item" href="https://github.com/adwardlee/RenderIH">
+            RenderIH
         </div>
       </div>
     </div>
@@ -196,7 +189,7 @@
   <div class="container is-max-desktop">
     <div class="hero-body">
       <h2 class="subtitle has-text-centered">
-        Dataset comparison
+        Comparison of the related hand datasets. “MT” is short for multi-textures and means whether the hand models in the dataset are assigned with diverse textures, AP is short for anti-penetration, “Hand type” means which interaction type the dataset focus on (SH-single hand, HO-hand to object, IH-hand to hand), and “IH Size” means the proportion of IH poses. “HDR” is short for High Dynamic Range. Static scenes refer to the use of randomly selected images as the background.
       </h2>
       <img src="./static/images/dataset.png"
                  class=""
@@ -309,7 +302,7 @@
 
         <div class="content has-text-justified">
 			<p>
-            When pretraining on RenderIH and finetuning on the IH2.6M data, our method can further reduce the MPJPE by about 1mm. Better hand-hand contact (CDev) and better relative root translation (MRRPE) can be observed in this table. 
+            When pretraining on RenderIH and finetuning on the IH2.6M data, our method can further reduce the MPJPE by about 1mm. Better hand-hand contact (CDev) and better relative root translation (MRRPE) can be observed in this table. (* means official code reproduction, # means RenderIH pretraining)
           </p>
         </div>
 		<div class="content has-text-centered">
@@ -320,7 +313,7 @@
         </div>
 		<div class="content has-text-justified">
 			<p>
-            When wrist joint is used as root for comparison, the results are shown in this table. 
+            When wrist joint is used as root for comparison, comparison of training with or without our dataset and test on IH2.6M dataset.
           </p>
         </div>
 		<div class="content has-text-centered">
